@@ -4,23 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Sample Page</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Optional: Link to external CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            background: #ffffff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #35424a;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Welcome to My Sample Page</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
     <main>
-        <section>
+        <section id="about">
             <h2>About This Page</h2>
-            <p>This is a simple HTML document to demonstrate a basic structure. You can add your own content here.</p>
+            <p>This is a simple HTML document to demonstrate a basic structure. You can add your own content here. It showcases various HTML features and styles.</p>
         </section>
-        <section>
-            <h2>Useful Links</h2>
+        <section id="services">
+            <h2>Our Services</h2>
             <ul>
-                <li><a href="https://www.example.com">Example Link</a></li>
-                <li><a href="https://www.google.com">Google</a></li>
+                <li>Web Development</li>
+                <li>Graphic Design</li>
+                <li>SEO Optimization</li>
+                <li>Content Writing</li>
             </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to <a href="mailto:info@example.com">email us</a>.</p>
         </section>
     </main>
     <footer>
